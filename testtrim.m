@@ -68,9 +68,9 @@ function testtrim( wavalldir, trim1dir, trim2dir )
 	end
 
 		% gather delta length statistics
-	icomp = intersect( i1filt, i2filt )
+	icomp = intersect( i1filt, i2filt );
 
-	deltas = abs( l1(icomp) - l2(icomp) )
+	deltas = abs( l1(icomp) - l2(icomp) );
 
 	d1 = deltas(deltas <= 1);
 	d10 = deltas(deltas <= 10);
